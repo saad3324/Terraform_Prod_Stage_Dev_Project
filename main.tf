@@ -514,7 +514,7 @@ resource "aws_docdb_cluster" "app_docdb_cluster" {
   cluster_identifier     = "${local.name_prefix}-docdb"
   engine                 = "docdb"
   master_username        = "health_stage"
-  master_password        = "THD10!1122"
+  master_password        = "xyz"
   vpc_security_group_ids = [aws_security_group.docdb_sg[0].id]
   db_subnet_group_name   = aws_docdb_subnet_group.app_docdb_subnet_group[0].name
   skip_final_snapshot    = true
